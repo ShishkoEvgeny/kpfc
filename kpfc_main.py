@@ -38,11 +38,8 @@ while True:
             print('no numbers, no english, only cyrillic!')
     except IndexError:
         print('absent value')
-print(kpfch)
+
 f = kpfch.split(',')
-
-
-
 
 print('product -', f[0])
 kcal = float(f[1])
@@ -61,12 +58,10 @@ proteins = total(proteins, tw)
 fats = total(fats, tw)
 carbohydrates = total(carbohydrates, tw)
 
-kpfct = [kcal, proteins, fats, carbohydrates]
 print()
-print('kcal on', tw, 'weight', '-', kcal)
-print('proteins', tw, 'weight', '-', proteins)
-print('fats on', tw, 'weight', '-', fats)
-print('carbohydrates on', tw, 'weight', '-', carbohydrates)
+print('kcal on', tw, 'weight', '-', ("%.2f" % kcal))
+print('proteins', tw, 'weight', '-', ("%.2f" % proteins))
+print('fats on', tw, 'weight', '-', ("%.2f" % fats))
+print('carbohydrates on', tw, 'weight', '-', ("%.2f" % carbohydrates))
 
-print(kpfct)
 
